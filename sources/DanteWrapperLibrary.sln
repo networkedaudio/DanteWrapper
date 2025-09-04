@@ -1,28 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanteWrapperLibrary", "DanteWrapperLibrary\DanteWrapperLibrary.csproj", "{2E4C9FF0-20A8-49B5-A159-475D3AD13507}"
 	ProjectSection(ProjectDependencies) = postProject
-		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 		{166456AE-8C90-40ED-8DD4-76449D4425C5} = {166456AE-8C90-40ED-8DD4-76449D4425C5}
+		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DanteWrapperLibrary.Tests", "DanteWrapperLibrary.Tests\DanteWrapperLibrary.Tests.csproj", "{823EE9F4-EB29-499E-9C88-D0B55948B2CE}"
 	ProjectSection(ProjectDependencies) = postProject
-		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 		{166456AE-8C90-40ED-8DD4-76449D4425C5} = {166456AE-8C90-40ED-8DD4-76449D4425C5}
+		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dante_browsing_test", "browsing\dante_browsing_test.vcxproj", "{166456AE-8C90-40ED-8DD4-76449D4425C5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D587DE43-0163-4426-A7E4-4F387D35979F} = {D587DE43-0163-4426-A7E4-4F387D35979F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dante_routing_test", "routing\dante_routing_test.vcxproj", "{2111D011-C70F-4289-B8AF-469B6AAE4096}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D587DE43-0163-4426-A7E4-4F387D35979F} = {D587DE43-0163-4426-A7E4-4F387D35979F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DanteWrapperApp", "DanteWrapperApp\DanteWrapperApp.csproj", "{9C6579F4-09A3-4580-8057-D4A196C8DCDC}"
 	ProjectSection(ProjectDependencies) = postProject
-		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 		{166456AE-8C90-40ED-8DD4-76449D4425C5} = {166456AE-8C90-40ED-8DD4-76449D4425C5}
+		{2111D011-C70F-4289-B8AF-469B6AAE4096} = {2111D011-C70F-4289-B8AF-469B6AAE4096}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "original_dante_browsing_test", "original_browsing\original_dante_browsing_test.vcxproj", "{D587DE43-0163-4426-A7E4-4F387D35979F}"
@@ -41,8 +47,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x64.Build.0 = Debug|Any CPU
+		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x64.ActiveCfg = Debug|x64
+		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x64.Build.0 = Debug|x64
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Debug|x86.Build.0 = Debug|Any CPU
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,8 +59,8 @@ Global
 		{2E4C9FF0-20A8-49B5-A159-475D3AD13507}.Release|x86.Build.0 = Release|Any CPU
 		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x64.Build.0 = Debug|Any CPU
+		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x64.ActiveCfg = Debug|x64
+		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x64.Build.0 = Debug|x64
 		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Debug|x86.Build.0 = Debug|Any CPU
 		{823EE9F4-EB29-499E-9C88-D0B55948B2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -89,8 +95,8 @@ Global
 		{2111D011-C70F-4289-B8AF-469B6AAE4096}.Release|x86.Build.0 = Release|Win32
 		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x64.Build.0 = Debug|Any CPU
+		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x64.ActiveCfg = Debug|x64
+		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x64.Build.0 = Debug|x64
 		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Debug|x86.Build.0 = Debug|Any CPU
 		{9C6579F4-09A3-4580-8057-D4A196C8DCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -6,8 +6,9 @@
     <LangVersion>8</LangVersion>
     <Nullable>enable</Nullable>
     <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Platforms>x64</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,8 +16,8 @@
   </ItemGroup>
 
   <Target Name="Copy dlls" BeforeTargets="Compile">
-    <Copy SourceFiles="$(SolutionDir)bin\$(Configuration)\Win32\dante_browsing_test.dll" DestinationFolder="$(TargetDir)" />
-    <Copy SourceFiles="$(SolutionDir)bin\$(Configuration)\Win32\dante_routing_test.dll" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="C:\Development\GitHub\DanteWrapper\sources\bin\Debug\x64\dante_browsing_test.dll" DestinationFolder="$(TargetDir)" />
+    <Copy SourceFiles="C:\Development\GitHub\DanteWrapper\sources\bin\Debug\x64\dante_routing_test.dll" DestinationFolder="$(TargetDir)" />
     <Message Text="dll's copied" Importance="high" />
   </Target>
 
